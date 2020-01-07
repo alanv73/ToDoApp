@@ -9,12 +9,16 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    @IBOutlet weak var txtNewTask: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btnAddTask(_ sender: Any) {
+        
+    }
+    
 }
 
