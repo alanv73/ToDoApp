@@ -8,22 +8,46 @@
 
 import UIKit
 
+//var todo = ["Jeff", "Bob", "Jack", "Jill"]
+
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var tvToDo: UITableView!
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        if let todo = todoList {
+            return todo.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        if let todo = todoList {
+            cell.textLabel?.text = todo[indexPath.row]
+        }
+        return cell
+    }
+ 
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            todoList?.remove(at: indexPath.row)
+            tvToDo.reloadData()
+            saveData(todoList: todoList!)
+        }
     }
     
-
+    override func viewDidAppear(_ animated: Bool) {
+        tvToDo.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        todoList = fetchData()
     }
-
 
 }
 

@@ -16,6 +16,7 @@
 		C252FA4C23C4FFC1003BCF69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C252FA4A23C4FFC1003BCF69 /* LaunchScreen.storyboard */; };
 		C252FA5723C4FFC1003BCF69 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252FA5623C4FFC1003BCF69 /* ToDoListTests.swift */; };
 		C252FA6223C4FFC1003BCF69 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C252FA6123C4FFC1003BCF69 /* ToDoListUITests.swift */; };
+		E7CC996A23C530D100279FFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CC996923C530D100279FFB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		C252FA5D23C4FFC1003BCF69 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C252FA6123C4FFC1003BCF69 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		C252FA6323C4FFC1003BCF69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7CC996923C530D100279FFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C252FA3D23C4FFC0003BCF69 /* AppDelegate.swift */,
 				C252FA3F23C4FFC0003BCF69 /* SceneDelegate.swift */,
 				C252FA4123C4FFC0003BCF69 /* FirstViewController.swift */,
+				E7CC996923C530D100279FFB /* Constants.swift */,
 				C252FA4323C4FFC0003BCF69 /* SecondViewController.swift */,
 				C252FA4523C4FFC0003BCF69 /* Main.storyboard */,
 				C252FA4823C4FFC1003BCF69 /* Assets.xcassets */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CC996A23C530D100279FFB /* Constants.swift in Sources */,
 				C252FA4423C4FFC0003BCF69 /* SecondViewController.swift in Sources */,
 				C252FA4223C4FFC0003BCF69 /* FirstViewController.swift in Sources */,
 				C252FA3E23C4FFC0003BCF69 /* AppDelegate.swift in Sources */,

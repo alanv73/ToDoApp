@@ -17,6 +17,11 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func btnAddTask(_ sender: Any) {
+        if(txtNewTask.text != "") {
+            todoList?.append(txtNewTask.text!)
+            txtNewTask.text = ""
+            saveData(todoList: todoList!)
+        }
         
     }
     
