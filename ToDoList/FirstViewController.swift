@@ -8,7 +8,6 @@
 
 import UIKit
 
-//var todo = ["Jeff", "Bob", "Jack", "Jill"]
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tvToDo: UITableView!
