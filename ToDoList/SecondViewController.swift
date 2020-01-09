@@ -14,8 +14,9 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+                
     }
-
+  
     @IBAction func btnAddTask(_ sender: Any) {
         if(txtNewTask.hasText) {
             let item = txtNewTask.text!
@@ -32,6 +33,11 @@ class SecondViewController: UIViewController {
         }
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
 }
 
