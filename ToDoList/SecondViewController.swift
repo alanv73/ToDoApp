@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var txtNewTask: UITextField!
     
     override func viewDidLoad() {
@@ -38,6 +38,9 @@ class SecondViewController: UIViewController {
         self.view.endEditing(true)
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtNewTask.resignFirstResponder()
+        return true
+    }
 }
 
